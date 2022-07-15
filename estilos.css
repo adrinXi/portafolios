@@ -1,0 +1,321 @@
+:root {
+    --morado: #8e7bef;
+    --negro: #222222;
+    --amarillo: #fcda68;
+    --gris: #423f40;
+    --blanco: #ffffff;
+    --semi-gris: #f9f5f2;
+    --body-font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal_container {
+    /* max-width: 345px; */
+    margin: auto;
+    padding: auto;
+    font-family: var(--body-font);
+}
+
+/* DISEÑO PARA MOVIL */
+/* ====barra de navegacion==== */
+.barra_navegacion {
+    max-width: 345px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barra_menu {
+    fill: var(--amarillo);
+}
+/*==== contenedor presentacion ====*/
+.contenedor_presentacion {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    margin-bottom: 15px;
+}
+
+.titulo h1 {
+    font-size: 50px;
+}
+
+.descripcion_uno {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.perfil {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.foto_perfil img{
+    max-width: 160px;
+    height: auto;
+    border-radius: 1em;
+}
+
+.social_descripcion {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    margin-left: 10px;
+}
+
+.descripcion_dos {
+    font-size: 25px;
+}
+
+.tiempo_experiencia {
+    font-size: 25px;
+}
+
+.tiempo_experiencia span {
+    color: var(--morado);
+    font-weight: 900;
+}
+
+.botones_sociales {
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.botones_sociales img {
+    background-color: var(--morado);
+    padding: .4em;
+    border-radius: 50%;
+}
+
+.boton_enlace {
+    margin: auto;
+    padding: auto;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--morado);
+    gap: 1em;
+    align-items: center;
+}
+
+.boton_enlace a {
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: 5px;
+}
+
+/* contenedor experiencia */
+.contenedor_experiencia {
+    background-color: var(--amarillo);
+    margin-bottom: 50px;
+}
+
+.experiencia_habilidades {
+    max-width: 345px;
+    margin: auto;
+}
+
+.experiencia {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.experiencia h2 {
+    margin-bottom: 20px;
+}
+
+.trabajos_tiempo {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.trabajos_tiempo li {
+    list-style: none;
+}
+
+.habilidades_herramientas {
+    padding-bottom: 30px;
+}
+
+.herramientas {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.habilidad {
+    display: flex;
+    flex-direction: column;
+}
+
+.habilidad li {
+    align-self: center;
+    text-align: center;
+}
+
+/* contenedor portafolio */
+.portafolio {
+    max-width: 345px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.tag_filter {
+    text-align: center;
+}
+
+.evidencia {
+    margin-bottom: 30px;
+}
+
+.evidencia img {
+    max-width: 345px;
+    height: auto;
+}
+
+.evidencia h3 {
+    color: var(--morado);
+}
+
+/* contenedor contacto */
+.contacto_contenedor {
+    max-width: 345px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contacto_contenedor h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.medios_contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.telefono_email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+}
+
+.telefono_email img {
+    max-width: 50px;
+    height: auto;
+    align-self: center;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    color: var(--morado);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+/* media queries */
+@media  screen and (min-width: 880px) {
+    .inicio {
+        margin-top: 30px;
+    }
+    /* barra de navegacion */
+    .barra_navegacion {
+        margin-top: 30px;
+        max-width: 700px;
+        margin: auto;
+    }
+    /* contenedor presentacion */
+    .contenedor_presentacion {
+        margin-top: 50px;
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:1em;
+    }
+
+    .titulo_descripcion {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .boton_enlace {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .boton_enlace {
+        position: fixed;
+        align-self: end;
+        position: absolute;
+    }
+
+    /* contenedor experiencia */
+    .experiencia_habilidades {
+        max-width: 700px;
+    }
+
+    .contenedor_dosbox {
+        display: flex;
+    }
+
+    .experiencia_tiempo {
+        padding: 30px;
+    }
+
+    .experiencia_tiempo h3 {
+        padding-bottom: 20px;
+    }
+
+    .trabajos_tiempo {
+        padding: 0;
+    }
+
+    .herramientas {
+        display: flex;
+    }
+
+    /* contenedor portafolio */
+    .portafolio {
+        max-width: 700px;
+    }
+
+    .content_elements {
+        margin: auto;
+        display: flex;
+    }
+
+    .content_elements img {
+        max-width: 250px;
+        height: auto;
+    }
+}
